@@ -18,6 +18,7 @@
             margin-left: -15px; margin-right:-15px;margin-top:-15px
         }
         a{
+            color: blue;
             text-decoration: none;
         }
         li{
@@ -25,6 +26,7 @@
             margin-right:15px; padding-top: 10px
         }
         li a{
+            color: black;
             text-decoration: none;
             padding-top: 5px; padding-bottom: 5px;
             margin-right: 15px
@@ -51,6 +53,24 @@
             font-size: 25px
         }
 
+        .personalwebsite{
+            background-color: white;
+            padding-top: 5px; padding-bottom: 5px;
+            margin-right: 15px
+        }
+        .GCCCWebsite{
+            background-color: aquamarine;
+            padding-top: 5px; padding-bottom: 5px;
+            margin-right: 15px
+        }
+        .link{
+            color: blue;
+            text-decoration: underline;
+            margin-left: 15px; margin-right: 15px;
+            font-size: 25px
+
+        }
+
     </style>
 </head>
 
@@ -66,15 +86,36 @@
         </div>
     </nav>
     <h1>Projects</h1>
-    <h2>Personal Website</h2>
-    <p>
-        The goal of this project was to create a personal website to show off the future projects that I work on
-        In order to accomplish this project, I needed to learn HTML, something that I have no prior experience with.
-        Beyond HTML, I also had to work with CSS for the styling of the website. This website is still a work in
-        progress, but I plan to come back to it from time to time, both to improve the website and to add future projects 
-        to it.
-    </p>
-
+    <div class ="personalwebsite">
+        <h2>Personal Website</h2>
+        <p>
+            The goal of this project was to create a personal website to show off the future projects that I work on
+            In order to accomplish this project, I needed to learn HTML, something that I have no prior experience with.
+            Beyond HTML, I also had to work with CSS for the styling of the website. This website is still a work in
+            progress, but I plan to come back to it from time to time, both to improve the website and to add future projects 
+            to it. The website is hosted on Github right now, and at some point in the future I will buy a domain for it. 
+            If you want to look at the code for the website, then press ctrl + shift + c on Windows/Linux, or cmd + shift + c
+            on mac to use inspect element.
+        </p>
+    </div>
+    <div class ="GCCCWebsite">
+        <h2>Gress Custom Craft Corner Website</h2>
+        <p>
+            This is a website designed for my mother's craft business. I designed it using Showit, a website building service.
+            I started off using a template, and then edited it for the final website. I ended up having to make the shop pages
+            essentially from scratch since the template did not provide adequate pages for it. My mother provided most of the text
+            and images, while I did all of the web design. For the shop, I encorporated Shopify, a service for online stores.
+            I then used the Shopify buy button extension in order to allow people to purchase items through the website. 
+            The biggest challenge was allowing people to have custom orders. This is currently the last part of the website that 
+            needs to be finished. Neither Shopify or Showit provide adequate options for this. The solution I came up was to have
+            a form pop up when a button pressed, and then having the add to cart button appear once the form is submitted. This 
+            is not ideal for me, since this means that the form will still be submitted even if the item is ultimately not purchased,
+            but it is the best solution I could come up with.
+        </p>
+        <div class ="link"> <a href="https://gresscustomcraftcorner.com">https://gresscustomcraftcorner.com<br></a></div>
+        <img src="images/GCCCHomepage.png" alt="Gress Custom Creation Website Home Page" width = "1100" height = "642">
+        <img src="images/GCCCShopPage.png" alt="Gress Custom Creation Website Shop Page" width = "1100" height = "642">
+    </div>
 </body>
 
 </html>
